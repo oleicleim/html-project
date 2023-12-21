@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+
+        .home-main-div {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .home-sidebar {
+            width: 200px;
+            background-color: #0f0501; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            flex: 1;
+            background-image: url(img/Cakeology.png);
+            background-color: #130801cc;
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff; 
+        }
+
+        
+        .home-sidebar-btn {
+            width: 100%;
+            padding: 10px;
+            background-color:transparent; 
+            color: #ffffff; 
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 10px; 
+        }
+        .home-sidebar-btn:hover {
+            background-color: #b40370;
+        }
+        
+        .home-sidebar-image {
+            width: 100%; 
+            height: 150px; 
+            margin-bottom: 50px;
+        }
+        .main-content{
+            position: relative;
+            background-color: #2b0402cc;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            margin: auto;
+        }
+
+        .black{
+            background-image: url(img/black.jpg);
+            width: 30rem;
+            height: 30rem;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="home-main-div">
+       
+        <div class="home-sidebar">
+            <a href="index.html">
+                <img class="home-sidebar-image" src="img/Cakeology.png" alt="Sidebar Image">
+            </a>
+            <a href="inquiries.html">
+                <button class="home-sidebar-btn">For Inquiries</button>
+            </a>
+            
+            <a href="about-us.html">
+                <button class="home-sidebar-btn">About us</button>
+            </a>
+            
+            <a href="home.html">
+                <button class="home-sidebar-btn"> Cakes</button>
+            </a>
+            
+        </div>
+
+        
+        <div class="main-content">
+            <h1 class="display-1">Black Forest Cake </h1>
+            <div class="black"></div>
+            <h3 class="h3">Black Forest cake features layers of rich chocolate cake, luscious cherry filling, and fluffy whipped cream. Its luscious combination of flavors delights lovers of chocolate and cherries.</h3>
+            
+        </div>
+        
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
